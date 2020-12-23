@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textSize="22dp" >
+            </TextView>
+
+           
+
+            
+            <TextView
+                android:id="@+id/TexteQui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="La machine appartient à "
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerQui"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp" >
+            </Spinner>
+            
+            
+             <TextView
+                android:id="@+id/TexteMarque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Marque"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerMarque"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp" >
+            </Spinner>
+            
+               <TextView
+                android:id="@+id/TexteTypemachine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Type de machine"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerTypemachine"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp" >
+            </Spinner>
+            
+               <TextView
+                android:id="@+id/TexteSymptome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Symptôme"
+                android:textSize="22dp" >
+            </TextView>
+            
+                <Button 
+	        android:id="@+id/butSymptome"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:clickable="true"
+	        android:text="Symptome"
+	        android:textSize="22dip"
+        	/>
+
+            <Spinner
+                android:id="@+id/spinnerSymptome"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp" >
+            </Spinner>
+            
+            
+               <TextView
+                android:id="@+id/Textejourfermeture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Jour de fermeture"
+                android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerJourfermeture"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="20dp" >
+            </Spinner>
+            
+            
+            
+            
+            
+            <TextView
+                android:id="@+id/TexteCommentaire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="N° de série"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditCommentaire"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textNoSuggestions"
+                android:textStyle="bold"
+                android:editable="true"
+                android:padding="10dp"
+                android:lines="1"
+                android:gravity="top"
+                android:selectAllOnFocus="true"
+                android:text="" >
+            </EditText>
+                      
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

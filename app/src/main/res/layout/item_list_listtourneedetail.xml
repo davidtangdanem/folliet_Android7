@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/linear_item_tournee_detail">
+
+    <LinearLayout
+        android:id="@+id/llNameTarifOption"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvTitleName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="5dp"
+            android:text="Code client : "
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvValueName"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTitleCOdeArticle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Nom client : "
+            android:textSize="14sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvValueCodeArticle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSecondLine"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:id="@+id/tvTitleDebut"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Ville : "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvValueDebut"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tvTitleFin"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Tournée : "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvValueFin"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textSize="14sp" />
+
+
+
+            <TextView
+                android:id="@+id/tvTitlePrix"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="Périodicité : "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvValuePrix"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textSize="14sp" />
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llThirdLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+
+        <LinearLayout
+            android:id="@+id/llPrixMin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTitlePrixMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Date dernière facture : "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvValuePrixMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/llBloque"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTitleBloque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="CA moyen HT "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvValueBloque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

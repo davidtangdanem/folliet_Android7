@@ -1,0 +1,548 @@
+package com.menadinteractive.segafredo.db;
+
+import java.util.ArrayList;
+
+import android.R;
+import android.database.Cursor;
+import android.os.Bundle;
+
+import com.menadinteractive.segafredo.communs.Fonctions;
+import com.menadinteractive.segafredo.communs.Global;
+import com.menadinteractive.segafredo.helper.Taxe;
+
+public class TableMaterielClient extends DBMain{
+
+	static public String TABLENAME="MATERIELCLIENTV4";
+
+	public static final String FIELD_CODECLIENT		= "PAR_CODECLIENT";
+	public static final String FIELD_CODEART		= "PAR_CODEART";
+	public static final String FIELD_LIBART			= "PAR_LIBART";
+	public static final String FIELD_TYPECONTRAT	= "PAR_TYPECONTRAT";
+	public static final String FIELD_NUMSERIEFAB 		= "PAR_NUMSERIEFAB";
+	public static final String FIELD_CODVRP 		= "PAR_CODVRP";
+	public static final String FIELD_DATEINST 		= "PAR_DATEINST";
+	public static final String FIELD_DATEFIN 		= "PAR_DATEFIN";
+	
+	public static final String FIELD_REF 			= "PAR_REF";
+	public static final String FIELD_MACHINE 		= "PAR_MACHINE";
+	public static final String FIELD_EQUIPEMENT 	= "PAR_EQUIPEMENT";
+	
+	
+
+	public static String getFullFieldName(String field){
+		return TABLENAME+"."+field;
+	}
+
+
+	public static final String TABLE_CREATE="CREATE TABLE ["+TABLENAME+"] ("+
+			" ["+FIELD_CODECLIENT			+"] [varchar](50) NULL" 	+ COMMA +
+			" ["+FIELD_CODEART		+"] [varchar](50) NULL" 	+ COMMA +
+			" ["+FIELD_LIBART		+"] [varchar](255) NULL" 	+ COMMA +
+			" ["+FIELD_TYPECONTRAT	+"] [varchar](50)NULL" 	+ COMMA +
+			" ["+FIELD_DATEINST	+"] [varchar](50)NULL" 	+ COMMA +
+			" ["+FIELD_DATEFIN	+"] [varchar](50)NULL" 	+ COMMA +
+			" ["+FIELD_NUMSERIEFAB			+"] [varchar](255) NULL" 	+ COMMA +
+			" ["+FIELD_REF			+"] [varchar](255) NULL"	+ COMMA +
+			" ["+FIELD_MACHINE			+"] [varchar](255) NULL"	+ COMMA +
+			" ["+FIELD_EQUIPEMENT			+"] [varchar](255) NULL"	+ COMMA +
+			
+			" ["+FIELD_CODVRP			+"] [varchar](50) NULL"	+ 
+			
+			
+			")";
+	
+	
+	static public class structMaterielClient
+	{
+		
+		
+		public String PAR_CODECLIENT = "";        
+		public String PAR_CODEART = "";
+		public String PAR_LIBART = "";
+		public String PAR_TYPECONTRAT  = "";                  
+		public String PAR_NUMSERIEFAB = "";  
+		public String PAR_CODVRP = ""; 
+		public String PAR_DATEINST = ""; 
+		public String PAR_DATEFIN = ""; 
+		public String PAR_REF = ""; 
+		public String PAR_MACHINE = ""; 
+		public String PAR_EQUIPEMENT = ""; 
+		
+		
+		@Override
+		public String toString() {
+			return "structClient [PAR_CODECLIENT=" + PAR_CODECLIENT + ", PAR_CODEART=" + PAR_CODEART
+					+ ", PAR_LIBART=" + PAR_LIBART + ", PAR_PLAQUESZ=" + PAR_TYPECONTRAT + ", PAR_NUMSERIEFAB="
+					+ PAR_NUMSERIEFAB +  ", PAR_EQUIPEMENT=" + PAR_EQUIPEMENT +  ",  PAR_MACHINE=" + PAR_MACHINE +  ", PAR_REF=" + PAR_REF +  ", PAR_CODVRP=" + PAR_CODVRP +  ", PAR_DATEINST=" + PAR_DATEINST +  ", PAR_DATEFIN=" + PAR_DATEFIN 
+					+"]";
+		}
+	}
+		
+	MyDB db;
+	public TableMaterielClient(MyDB _db)
+	{
+		super();
+		db=_db;
+	}
+	public boolean clear(StringBuilder err)
+	{
+		try
+		{
+			String query="DROP TABLE IF EXISTS "+TABLENAME;
+			//db.conn.delete(TABLENAME, null, null);
+			db.execSQL(query, err);
+			db.execSQL(TABLE_CREATE,err);
+		}
+		catch(Exception ex)
+		{
+			err.append(ex.getMessage());
+			return false;	
+		}
+		return true;
+	}
+
+	public structMaterielClient load(Cursor cursor){
+		structMaterielClient MaterielClient = new structMaterielClient();
+		if(cursor != null){
+			
+		
+			MaterielClient.PAR_CODECLIENT = giveFld(cursor, FIELD_CODECLIENT);
+			MaterielClient.PAR_CODEART = giveFld(cursor, FIELD_CODEART);
+			MaterielClient.PAR_LIBART = giveFld(cursor, FIELD_LIBART);
+			MaterielClient.PAR_TYPECONTRAT = giveFld(cursor, FIELD_TYPECONTRAT);
+			MaterielClient.PAR_NUMSERIEFAB = giveFld(cursor, FIELD_NUMSERIEFAB);
+			MaterielClient.PAR_CODVRP = giveFld(cursor, FIELD_CODVRP);
+			MaterielClient.PAR_DATEINST = giveFld(cursor, FIELD_DATEINST);
+			MaterielClient.PAR_DATEFIN = giveFld(cursor, FIELD_DATEFIN);
+			
+			MaterielClient.PAR_REF = giveFld(cursor, FIELD_REF);
+			MaterielClient.PAR_MACHINE = giveFld(cursor, FIELD_MACHINE);
+			MaterielClient.PAR_EQUIPEMENT = giveFld(cursor, FIELD_EQUIPEMENT);
+			
+		}
+
+	
+		return MaterielClient;
+	}
+	
+
+	public structMaterielClient load(String cod_cli, String cod_pro){
+		structMaterielClient MaterielClient = new structMaterielClient();
+		String query = "SELECT *"
+				+" FROM "+TABLENAME
+				+" WHERE "+getFullFieldName(FIELD_CODECLIENT)+" = "+cod_cli+" "
+				+ "and "+getFullFieldName(FIELD_CODEART)+" = "+cod_pro+"";
+
+		Cursor cursor =  db.conn.rawQuery(query, null);
+
+		if(cursor != null && cursor.moveToFirst()){
+
+			MaterielClient = load(cursor);
+			cursor.close();
+		}
+
+		return MaterielClient;
+	}
+	public structMaterielClient load(String cod_cli){
+		structMaterielClient MaterielClient = new structMaterielClient();
+		String query = "SELECT *"
+				+" FROM "+TABLENAME
+				+" WHERE "+getFullFieldName(FIELD_CODECLIENT)+" = "+cod_cli+" ";
+		
+		
+		Cursor cursor =  db.conn.rawQuery(query, null);
+
+		if(cursor != null && cursor.moveToFirst()){
+
+			MaterielClient = load(cursor);
+			cursor.close();
+		}
+
+		return MaterielClient;
+	}
+
+	
+
+	/**
+	 * Permet d'obtenir une liste de structTarif à partir d'un cursor
+	 * @param cursor
+	 * @return ArrayList<structTarif>
+	 */
+	public ArrayList<structMaterielClient> getListOfCursorMaterielClient(Cursor cursor){
+		ArrayList<structMaterielClient> list = new ArrayList<TableMaterielClient.structMaterielClient>();
+
+		cursor.moveToFirst();
+		while(!cursor.isAfterLast()){
+			structMaterielClient MaterielClient = new structMaterielClient();
+			fillStruct(cursor,MaterielClient);
+			list.add(MaterielClient);
+			cursor.moveToNext();
+		}
+		cursor.close();
+		return list;
+
+	}
+
+	public int Count()
+	{
+
+		try
+		{
+			String query="select count(*) from "+TABLENAME;
+			Cursor cur=db.conn.rawQuery(query, null);
+			if (cur.moveToNext())
+			{
+				int i =cur.getInt(0);
+				if (cur!=null)
+					cur.close();
+				return i;
+			}
+			if (cur!=null)
+				cur.close();
+			return 0;
+		}
+		catch(Exception ex)
+		{
+			return -1;
+		}
+
+	}
+	public int Count(String codecli)
+	{
+
+		try
+		{
+			String query="select count(*) from "+TABLENAME+
+			" where "+FIELD_CODECLIENT+"='"+codecli+"'";
+			Cursor cur=db.conn.rawQuery(query, null);
+			if (cur.moveToNext())
+			{
+				int i=cur.getInt(0);
+				if (cur!=null)
+					cur.close();
+				return i;
+			}
+			if (cur!=null)
+				cur.close();
+			return 0;
+		}
+		catch(Exception ex)
+		{
+			return 0;
+		}
+
+	}
+
+
+	
+
+	void fillStruct(Cursor cur,structMaterielClient materiel)
+	{
+		
+		
+		materiel.PAR_CODECLIENT=cur.getString(cur.getColumnIndex(FIELD_CODECLIENT));
+		materiel.PAR_CODECLIENT=cur.getString(cur.getColumnIndex(FIELD_CODEART));
+		materiel.PAR_LIBART=cur.getString(cur.getColumnIndex(FIELD_LIBART));
+		materiel.PAR_TYPECONTRAT=cur.getString(cur.getColumnIndex(FIELD_TYPECONTRAT));
+		materiel.PAR_DATEINST=cur.getString(cur.getColumnIndex(FIELD_DATEINST));
+		materiel.PAR_DATEFIN=cur.getString(cur.getColumnIndex(FIELD_DATEFIN));
+		materiel.PAR_NUMSERIEFAB=cur.getString(cur.getColumnIndex(FIELD_NUMSERIEFAB));
+		materiel.PAR_CODVRP=cur.getString(cur.getColumnIndex(FIELD_CODVRP));
+		
+		materiel.PAR_REF=cur.getString(cur.getColumnIndex(FIELD_REF));
+		materiel.PAR_MACHINE=cur.getString(cur.getColumnIndex(FIELD_MACHINE));
+		materiel.PAR_EQUIPEMENT=cur.getString(cur.getColumnIndex(FIELD_EQUIPEMENT));
+		
+		
+	}
+	public ArrayList<Bundle> getMaterielClientFilters(String codeclient,  String filter,String numfab)
+	{
+		try
+		{
+			filter=MyDB.controlFld(filter);
+			String wherenumfab="";
+			if(!Fonctions.GetStringDanem(numfab).equals(""))
+			{
+				wherenumfab=" and "+FIELD_NUMSERIEFAB+"='"+numfab+"'";
+			}
+			String query="";
+			query="select * FROM "+
+					TABLENAME +" left join "+
+					dbKD451RetourMachineclient.TABLENAME+
+					" on "+
+					dbKD451RetourMachineclient.FIELD_RMC_CODEART+"="+FIELD_CODEART+
+					" and "+
+					dbKD451RetourMachineclient.FIELD_RMC_CODECLI+"="+FIELD_CODECLIENT+
+					" and "+
+					dbKD451RetourMachineclient.FIELD_RMC_NUMSERIE+"="+FIELD_NUMSERIEFAB+
+					 
+					
+					" where ("+ 
+					FIELD_LIBART+ " like '%"+filter+"%' "+
+					" or "+
+					FIELD_NUMSERIEFAB+ " like '%"+filter+"%' "+
+				 
+					" or "+
+					FIELD_CODEART+ " like '%"+filter+"%' ) and "+
+					FIELD_CODECLIENT+
+					"='"+codeclient+"'    "+wherenumfab;
+			
+			
+			ArrayList<Bundle>  materiel=new ArrayList<Bundle>();
+			Cursor cur=db.conn.rawQuery(query, null);
+			while (cur.moveToNext())
+			{
+				Bundle cli=new Bundle();
+				cli.putString(Global.dbMaterielClient.FIELD_CODECLIENT,cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_CODECLIENT)));
+				cli.putString(Global.dbMaterielClient.FIELD_CODEART, cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_CODEART)));
+				cli.putString(Global.dbMaterielClient.FIELD_LIBART, cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_LIBART)));
+				cli.putString(Global.dbMaterielClient.FIELD_TYPECONTRAT, cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_TYPECONTRAT)));
+				cli.putString(Global.dbMaterielClient.FIELD_NUMSERIEFAB, cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_NUMSERIEFAB)));
+				cli.putString(Global.dbMaterielClient.FIELD_CODVRP, cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_CODVRP)));
+				cli.putString(Global.dbMaterielClient.FIELD_DATEINST,Fonctions.YYYYMMDD_to_dd_mm_yyyy( cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_DATEINST))));
+				
+				cli.putString(Global.dbMaterielClient.FIELD_REF, cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_REF)));
+				cli.putString(Global.dbMaterielClient.FIELD_MACHINE, cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_MACHINE)));
+				cli.putString(Global.dbMaterielClient.FIELD_EQUIPEMENT, cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_EQUIPEMENT)));
+				
+				
+				
+				cli.putString(Global.dbMaterielClient.FIELD_DATEFIN, Fonctions.YYYYMMDD_to_dd_mm_yyyy(cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_DATEFIN))));
+		 		
+				//
+				TableHistoInter hi=new TableHistoInter(db);
+			    String type_inter="";
+			    
+			    type_inter= hi.LoadType_inter_numserieCloture(cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_CODECLIENT)), cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_NUMSERIEFAB)));
+			    String layoutcolor="rouge";
+			   
+			    String datefin="";
+			    boolean bhistoInter=false;
+			    datefin= hi.LoadDateFin_inter_numserieCloture(cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_CODECLIENT)), cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_NUMSERIEFAB)));
+			    bhistoInter=hi.ExisteDateFin_inter_numserie(cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_CODECLIENT)), cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_NUMSERIEFAB)));
+			    //Si date_fin_inter est rempli ou histo_inter est vide alors vert
+			  
+			    //Si histo_inter ok et date_fin_inter vide alors rouge
+				//Si histo_inter ok et type inter = XVISalors orange
+				    
+			    /*if (!datefin.trim().equals("") || bhistoInter==false)
+					layoutcolor="vert";
+				
+				if(Fonctions.GetStringDanem(type_inter).equals("XVIS"))
+				{
+					 layoutcolor="orange";
+					
+				}
+				if (datefin.trim().equals("") && bhistoInter==true )
+					layoutcolor="rouge";
+				
+				*/
+				
+				layoutcolor="vert";
+				// Si une machine présente dans D_MACHINES à une autre intervention dans D_HISTOINTER avec
+				// dar_fin_inter ='' et que typ_inter <>'XVIS' alors rouge
+				if (datefin.trim().equals("") && bhistoInter==true && !Fonctions.GetStringDanem(type_inter).equals("XVIS"))
+					layoutcolor="rouge";
+				
+				if (datefin.trim().equals("") && bhistoInter==true && Fonctions.GetStringDanem(type_inter).equals("XVIS") )
+					layoutcolor="orange";
+				
+				
+				
+				cli.putString("layoutcolor" 		,layoutcolor);
+				
+	 			
+				
+				String isdeleted=cur.getString(cur.getColumnIndex(dbKD451RetourMachineclient.FIELD_RMC_DATE));
+				if (isdeleted==null || isdeleted.equals(""))
+					cli.putString(dbKD451RetourMachineclient.FIELD_RMC_DATE,"" );
+				else
+					cli.putString(dbKD451RetourMachineclient.FIELD_RMC_DATE,"success48_optionmenu");
+				
+				String issent=cur.getString(cur.getColumnIndex(dbKD451RetourMachineclient.FIELD_RMC_SENT));
+				if (issent!=null && issent.equals("1"))
+					continue;
+					
+				
+				materiel.add(cli); 
+			}
+			if (cur!=null)
+				cur.close();
+			return materiel;
+		}
+		catch(Exception ex)
+		{
+			String err="";
+			err=ex.getMessage();
+			
+		}
+
+		return null;
+	}
+	
+	
+	public String GetMachine(String numserie,String codeclient)
+	{
+		String machine="";
+		try
+		{
+			String query="";
+			query="select * FROM "+
+					TABLENAME +
+					 
+					
+					" where "+ 
+
+					FIELD_NUMSERIEFAB+
+					"='"+numserie+"'  and   "+
+					FIELD_CODECLIENT+
+					"='"+codeclient+"'     "
+					;
+			
+			
+			ArrayList<Bundle>  materiel=new ArrayList<Bundle>();
+			Cursor cur=db.conn.rawQuery(query, null);
+			while (cur.moveToNext())
+			{
+				Bundle cli=new Bundle();
+				machine= cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_MACHINE));
+				
+			}
+			if (cur!=null)
+				cur.close();
+			return machine;
+		}
+		catch(Exception ex)
+		{
+			String err="";
+			err=ex.getMessage();
+			
+		}
+
+		return machine;
+	}
+	
+	public int Getdate_fin(String numserie,String codeclient)
+	{
+		int machine=0;
+		try
+		{
+			String query="";
+			query="select * FROM "+
+					TABLENAME +
+					 
+					
+					" where "+ 
+
+					FIELD_NUMSERIEFAB+
+					"='"+numserie+"'  and   "+
+					FIELD_CODECLIENT+
+					"='"+codeclient+"'     "
+					;
+			
+			
+			ArrayList<Bundle>  materiel=new ArrayList<Bundle>();
+			Cursor cur=db.conn.rawQuery(query, null);
+			while (cur.moveToNext())
+			{
+				machine= Fonctions.GetStringToIntDanem(cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_DATEFIN)));
+				
+			}
+			if (cur!=null)
+				cur.close();
+			return machine;
+		}
+		catch(Exception ex)
+		{
+			String err="";
+			err=ex.getMessage();
+			
+		}
+
+		return machine;
+	}
+	
+	public String GetEquipement(String numserie,String codeclient)
+	{
+		String machine="";
+		try
+		{
+			String query="";
+			query="select * FROM "+
+					TABLENAME +
+					 
+					
+					" where "+ 
+					
+					FIELD_NUMSERIEFAB+
+					"='"+numserie+"'  and   "+
+					FIELD_CODECLIENT+
+					"='"+codeclient+"'     "
+					;
+			
+			
+			ArrayList<Bundle>  materiel=new ArrayList<Bundle>();
+			Cursor cur=db.conn.rawQuery(query, null);
+			while (cur.moveToNext())
+			{
+				Bundle cli=new Bundle();
+				machine= cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_EQUIPEMENT));
+				
+			}
+			if (cur!=null)
+				cur.close();
+			return machine;
+		}
+		catch(Exception ex)
+		{
+			String err="";
+			err=ex.getMessage();
+			
+		}
+
+		return machine;
+	}
+	public String GetLblArticle(String numserie,String codeclient)
+	{
+		String machine="";
+		try
+		{
+			String query="";
+			query="select * FROM "+
+					TABLENAME +
+					 
+					
+					" where "+ 
+					
+					FIELD_NUMSERIEFAB+
+					"='"+numserie+"'  and   "+
+					FIELD_CODECLIENT+
+					"='"+codeclient+"'     "
+					;
+			
+			
+			ArrayList<Bundle>  materiel=new ArrayList<Bundle>();
+			Cursor cur=db.conn.rawQuery(query, null);
+			while (cur.moveToNext())
+			{
+				Bundle cli=new Bundle();
+				machine= cur.getString(cur.getColumnIndex(Global.dbMaterielClient.FIELD_LIBART));
+				
+			}
+			if (cur!=null)
+				cur.close();
+			return machine;
+		}
+		catch(Exception ex)
+		{
+			String err="";
+			err=ex.getMessage();
+			
+		}
+
+		return machine;
+	}
+	
+	
+	
+}

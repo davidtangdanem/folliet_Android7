@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-10.2.1_3058ff6d602c5b777625596652802970f1d7c915.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/exploded-aar/com.facebook.stetho/stetho/1.5.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fab3c7faab3bc30df0fbf2cbebfcb21753c95260">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/com.facebook.stetho-stetho-1.5.0_24bf9da5e62aaecf68e1701189667cb1eb189ab5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/android-sdks/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_815a0350372737207b47cbf587d0c477086e22dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_6383f47573d0378f3a2788a4c59d527257956c85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.1_1a19bc2013f83b2d216bf8293eb19fcaf5bfe86d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/libs/date4j.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="1b0591bfd9b1e8e904b53bd3b2574ab5ae222de1">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/date4j_95b27388f526c797c6cb7d0e765df77efd8bd8ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.1/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/jsr305-2.0.1_79d6e8091935f72d3bb05d6829659ea0f9750d2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/libs/MobilePrintLib.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ea8b2220252f4e85d3161a9307dbec7624fc5f4f">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/MobilePrintLib_85e16e6acee02d7b8a9f38e1f00d03fc5c3da8e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_fa74c3be1eb0cafc487fb687d1bf86c4b769f0c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/libs/ksoap2-android-assembly-2.6.4-jar-with-dependencies.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="07807e2efeabd47e4ff827ec198c16cef3c0d0c8">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/ksoap2-android-assembly-2.6.4-jar-with-dependencies_ad646e58a20dd47e6ba7adfe27bcfc65ae1079e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.1_fe067b3e21bc9558e20cb33c269146f9c1d209db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.1_cfab6975412a6503c5527dfab353bfdc5ce8d6ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/commons-cli-1.2_01ecf16cd5bc33478eb058f67ccb242c605954fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
+        <dex dex="/Users/carolinetang/Documents/AndroidStudio/folliet_as/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.2.1_7c6f8a4f1e6171d6a83838425e3bd7a2d05cb920.jar" />
+    </item>
+
+</items>

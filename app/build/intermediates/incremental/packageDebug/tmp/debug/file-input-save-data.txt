@@ -1,0 +1,23 @@
+#Internal package file, do not edit.
+#Tue Dec 15 12:09:53 CET 2020
+2.base=C\:\\Github\\folliet3\\app\\build\\intermediates\\merged_assets\\debug\\out
+0.path=danembr_rel.apk
+2.baseType=DIRECTORY
+3.base=C\:\\Github\\folliet3\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+2.set=ASSET
+1.path=fonts/couriernewregular.ttf
+4.base=C\:\\Github\\folliet3\\app\\build\\intermediates\\merged_assets\\debug\\out
+count=5
+2.path=fonts/opensansregular.ttf
+4.set=ASSET
+3.path=classes.dex
+3.baseType=DIRECTORY
+1.set=ASSET
+4.path=fonts/opensansbold.ttf
+1.baseType=DIRECTORY
+0.base=C\:\\Github\\folliet3\\app\\build\\intermediates\\merged_assets\\debug\\out
+0.baseType=DIRECTORY
+3.set=DEX
+1.base=C\:\\Github\\folliet3\\app\\build\\intermediates\\merged_assets\\debug\\out
+4.baseType=DIRECTORY
+0.set=ASSET

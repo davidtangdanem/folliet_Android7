@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:orientation="vertical" >
+
+        <!-- HEADER -->
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ab_solid_light_holo" >
+
+            <Button
+                android:id="@+id/b_close"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/action_close" />
+
+            <TextView
+                android:id="@+id/tv_raisonsociale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/b_close"
+                android:text="Raison Sociale"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <!-- BODY -->
+
+        <RelativeLayout
+            android:id="@+id/rl_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!-- CONTENT RIGHT -->
+
+            <LinearLayout
+                android:id="@+id/ll_body_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_codeclient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="code client : PODUH" />
+
+                <TextView
+                    android:id="@+id/tv_pays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FRANCE" />
+            </LinearLayout>
+
+            <!-- CONTENT LEFT -->
+
+            <LinearLayout
+                android:id="@+id/ll_body_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dip"
+                android:layout_toLeftOf="@id/ll_body_right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_address1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="address 1 : " />
+
+                <TextView
+                    android:id="@+id/tv_address2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="address 2 : " />
+
+                <TextView
+                    android:id="@+id/tv_cp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CP: 75015" />
+
+                <TextView
+                    android:id="@+id/tv_ville"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ville : Paris" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- FOOTER -->
+
+            <RelativeLayout
+                android:id="@+id/rl_footer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ab_bottom_solid_light_holo" >
+
+                <Button
+                    android:id="@+id/b_call"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@drawable/action_rapport" />
+
+                <Button
+                    android:id="@+id/b_direction"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:layout_toRightOf="@id/b_call"
+                    android:background="@drawable/action_direction" />
+
+                <Button
+                    android:id="@+id/b_select"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:layout_toRightOf="@id/b_direction"
+                    android:background="@drawable/action_select_client" />
+                
+                 <Button
+                    android:id="@+id/b_materiel"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                     android:layout_toRightOf="@id/b_select"
+                    android:background="@drawable/ic_action_materiel" />
+                
+                 <Button
+                    android:id="@+id/b_sav"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:layout_toRightOf="@id/b_materiel"
+                    android:background="@drawable/ic_action_sav" />
+
+                <Button
+                    android:id="@+id/b_mail"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                     android:layout_toRightOf="@id/b_sav"
+                    android:background="@drawable/ic_action_info" />
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/tvEvenement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:background="@color/red"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

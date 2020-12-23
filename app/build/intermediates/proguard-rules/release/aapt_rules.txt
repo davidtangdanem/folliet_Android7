@@ -1,0 +1,159 @@
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:497
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:445
+-keep class com.maps.MapsActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:354
+-keep class com.menadinteractive.agendanem.AgendaListActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:361
+-keep class com.menadinteractive.agendanem.AgendaViewActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:86
+-keep class com.menadinteractive.commande.commandeActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:189
+-keep class com.menadinteractive.commande.commandeInput { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:368
+-keep class com.menadinteractive.commentaire.CommentaireActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:100
+-keep class com.menadinteractive.echangestock.EchangeStockActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:107
+-keep class com.menadinteractive.echangestock.ValidationEchangeActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:36
+-keep class com.menadinteractive.folliet2016.DashboardActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:454
+-keep class com.menadinteractive.folliet2016.RequestVersionReceiver { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:29
+-keep class com.menadinteractive.folliet2016.app { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:74
+-keep class com.menadinteractive.folliet2016.prefs_authent { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:347
+-keep class com.menadinteractive.histo.FacturesDuesActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:489
+-keep class com.menadinteractive.histo.GalleryIntervention { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:326
+-keep class com.menadinteractive.histo.HistoDocumentsActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:340
+-keep class com.menadinteractive.histo.HistoDocumentsLignesActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:333
+-keep class com.menadinteractive.histo.HistoInterActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:375
+-keep class com.menadinteractive.histo.InterventionActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:382
+-keep class com.menadinteractive.histo.InterventionActivityRA { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:163
+-keep class com.menadinteractive.histo.InterventionAutreActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:170
+-keep class com.menadinteractive.histo.InterventionAutreRAActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:438
+-keep class com.menadinteractive.histo.OptionSymptomes { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:93
+-keep class com.menadinteractive.inventaire.InventaireActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:113
+-keep class com.menadinteractive.inventaire.ValidationInventaire { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:403
+-keep class com.menadinteractive.livraison.SuiviLivraisonActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:183
+-keep class com.menadinteractive.negos.media.ItecMediaActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:196
+-keep class com.menadinteractive.negos.quest.pac_plans_filler { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:201
+-keep class com.menadinteractive.negos.quest.pac_plans_filler2 { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:494
+-keep class com.menadinteractive.printmodels.ImpressionBTService { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:484
+-keep class com.menadinteractive.printmodels.ScanBTDevicesActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:476
+-keep class com.menadinteractive.printmodels.printBlueToothActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:479
+-keep class com.menadinteractive.printmodels.printPreviewActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:46
+-keep class com.menadinteractive.segafredo.carto.CartoMapActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:177
+-keep class com.menadinteractive.segafredo.client.GeolocalisationClient { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:130
+-keep class com.menadinteractive.segafredo.client.ficheclient { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:136
+-keep class com.menadinteractive.segafredo.client.statclient { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:249
+-keep class com.menadinteractive.segafredo.contactcli.ContactCliActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:277
+-keep class com.menadinteractive.segafredo.contactcli.fichecontactcli { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:305
+-keep class com.menadinteractive.segafredo.encaissement.EncaissementActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:284
+-keep class com.menadinteractive.segafredo.encaissement.ReglementActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:319
+-keep class com.menadinteractive.segafredo.encaissement.SignatureActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:312
+-keep class com.menadinteractive.segafredo.encaissement.ValidationAcompte { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:236
+-keep class com.menadinteractive.segafredo.findcli.FindCliActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:243
+-keep class com.menadinteractive.segafredo.findcli.MenuCliActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:270
+-keep class com.menadinteractive.segafredo.materielclient.CommentaireRetourMaterielClient { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:263
+-keep class com.menadinteractive.segafredo.materielclient.ListingMaterielClient { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:256
+-keep class com.menadinteractive.segafredo.materielclient.PretCategorieMaterielClient { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:125
+-keep class com.menadinteractive.segafredo.plugins.MiseAJour { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:149
+-keep class com.menadinteractive.segafredo.rapportactivite.rapportActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:142
+-keep class com.menadinteractive.segafredo.rapportactivite.rapportactivite { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:156
+-keep class com.menadinteractive.segafredo.rapportactivite.rapporttodo { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:291
+-keep class com.menadinteractive.segafredo.remisebanque.RecapitulatifRemiseEnBanque { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:298
+-keep class com.menadinteractive.segafredo.remisebanque.RemiseEnBanque { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:474
+-keep class com.menadinteractive.segafredo.synchro.GpsMonitorService { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:80
+-keep class com.menadinteractive.segafredo.synchro.SynchroActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:424
+-keep class com.menadinteractive.segafredo.tarif.OptionTarifActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:431
+-keep class com.menadinteractive.segafredo.tarif.OptionTarifDetailActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:496
+-keep class com.menadinteractive.segafredo.tournee.AjouterChargementActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:410
+-keep class com.menadinteractive.segafredo.tournee.ListeChargement2Activity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:417
+-keep class com.menadinteractive.segafredo.tournee.ListeChargementActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:389
+-keep class com.menadinteractive.segafredo.tournee.ListeTourneeActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:396
+-keep class com.menadinteractive.segafredo.tournee.ListeTourneeDetailActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:60
+-keep class com.menadinteractive.segafredo.tournee.TourneeActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:119
+-keep class com.menadinteractive.transfertstock.TransferstockActivity { <init>(); }
+# Referenced at C:\Github\folliet3\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:206
+-keep class com.menadinteractive.transfertstock.TransfetstockInput { <init>(); }
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_maps.xml:1
+-keep class android.support.v4.widget.DrawerLayout { <init>(...); }
+
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_maps.xml:12
+-keep class com.google.android.gms.maps.SupportMapFragment { <init>(...); }
+
+# Referenced at C:\Github\folliet3\app\src\main\res\layout-large-hdpi\cde_inputdlg2.xml:659
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_rapporttodo.xml:275
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_menuclient.xml:315
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_materielclient.xml:275
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_listpretmaterielclient.xml:49
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_interventionra.xml:89
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_intervention.xml:134
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_historapportact.xml:269
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_histointer.xml:269
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_histodocumentslignes.xml:216
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_histodocuments.xml:286
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_findcli.xml:41
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_facturesdues.xml:42
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_contactcli.xml:294
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_agenda_view.xml:136
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_agenda_list.xml:139
+-keep class com.menadinteractive.segafredo.communs.myListView { <init>(...); }
+
+# Referenced at C:\Github\folliet3\app\src\main\res\layout\activity_synchro.xml:73
+-keep class com.menadinteractive.segafredo.synchro.MultiSelectionSpinner { <init>(...); }
+

@@ -1,0 +1,1630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+            
+             <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/prospect_titre"
+                android:textSize="22dp" >
+            </TextView>
+            
+            <CheckBox
+                    android:id="@+id/checkMiseStandBy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+               android:text="Mise en stand By" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="22dp" />
+            
+            <TextView
+                android:id="@+id/TexteDateconcurrent"
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Date de fin de contrat chez le concurrent"
+                android:textSize="22dp" >
+            </TextView>
+            
+            <Button
+                android:id="@+id/bDateconcurrent"
+                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Date" />
+            
+
+           
+
+            <TextView
+                android:id="@+id/TexteCodeProspect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_code"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditCodeProspect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:selectAllOnFocus="true"
+                android:padding="10dp"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteCodeProspect2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_company"
+                 android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerCompany"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                
+                 android:visibility="gone"
+                android:textSize="20dp" >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/Texteraisonsocial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_raisonsocial"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditRaisonsocial"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text=""
+                android:editable="true"
+                android:textStyle="bold" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_nom"
+                android:visibility="gone"
+               
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditNom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textNoSuggestions"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="false"
+                android:visibility="gone"
+                android:text=""
+                >
+            </EditText>
+            
+             <TextView
+                android:id="@+id/TexteEnseigne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_enseigne"
+                android:textSize="22dp" >
+            </TextView>
+  			<EditText
+                android:id="@+id/EditEnseigne"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text=""
+                android:editable="true"
+               
+                >
+            </EditText>
+            
+            
+             <TextView
+                android:id="@+id/TexteAdresse1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_adr1"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditAdresse1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteAdresse2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_adr2"
+                android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditAdresse2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="false"
+                android:visibility="gone"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteCodepostal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_cp"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditCodepostal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteVille"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_ville"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditVille"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextePays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_pays"
+                android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerPays"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:visibility="gone"
+                android:textSize="20dp" >
+            </Spinner>
+            
+             <TextView
+                android:id="@+id/TexteTelephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_tel"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditTelephone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteFax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_fax"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditFax"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" 
+                android:textStyle="bold"
+                >
+            </EditText>
+            
+            
+  			 <TextView
+                android:id="@+id/TexteContactgsm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_contactgsm"
+                android:textSize="22dp" >  			     
+  			 </TextView>
+  			 
+  			 <EditText
+                android:id="@+id/EditContactgsm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="true"
+                android:text=""
+                android:textStyle="bold"
+                >
+                
+  			  
+               
+            </EditText>
+             <CheckBox
+                    android:id="@+id/checkPasdemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+               android:text="Pas de mail " /> 
+               
+               <TextView
+                android:id="@+id/TexteContactemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_contactemail"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditContactemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+				android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:editable="true"
+                android:singleLine="true"
+                android:text=""
+                 >
+            </EditText>
+
+
+
+            <TextView
+                android:id="@+id/TexteModereglement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_modereglement"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerModereglement"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            
+            
+            <TextView
+                android:id="@+id/TexteType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_type"
+                android:textSize="22dp" >
+            </TextView>
+
+
+            
+		            
+           
+
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            
+   <TextView
+                android:id="@+id/TexteCircuit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_circuit"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerCircuit"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            <TextView
+                android:id="@+id/TexteSiret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_siret"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditSiret"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+            
+            <TextView
+                android:id="@+id/TexteGroupe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_groupe"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerGroupe"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            
+
+            <TextView
+                android:id="@+id/TexteNumTVA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_numtva"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditNumTVA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textNoSuggestions"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteClasse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#ff0000"
+                android:text="@string/prospect_classe"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerClasse"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            
+             <TextView
+                android:id="@+id/TexteTypeEtablissement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#ff0000"
+                android:text="@string/prospect_typeetablissement"
+                android:textSize="22dp" >
+            </TextView>
+            
+              <Spinner
+                android:id="@+id/spinnerTypeEtablissement"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            
+              <TextView
+                android:id="@+id/TexteActiviteP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_activitep"
+                android:textSize="22dp" >
+            </TextView>
+            
+              <Spinner
+                android:id="@+id/spinnerActiviteP"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+
+           
+            
+              
+                <TextView
+                android:id="@+id/TexteFamclient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#ff0000"
+                android:text="@string/prospect_famclient"
+                android:textSize="22dp" >
+            </TextView>
+            
+              <Spinner
+                android:id="@+id/spinnerFamclient"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+           
+              <TextView
+                android:id="@+id/TexteSFamclient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#ff0000"
+                android:text="@string/prospect_sfamclient"
+                android:textSize="22dp" >
+            </TextView>
+            
+              <Spinner
+                android:id="@+id/spinnerSFamclient"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+           
+         
+            <TextView
+                android:id="@+id/TexteAgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_agent"
+
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerAgent"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+               
+                android:textSize="20dp" >
+            </Spinner>
+
+
+            <TextView
+                android:id="@+id/TexteVolumecafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Volume café annuel estimé (Kg)"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditVolumecafe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="phone"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+            
+             <TextView
+                android:id="@+id/TexteJourFerm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_jourferm"
+                android:textColor="#ff0000"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerJourFerm"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            
+            
+             <TextView
+                android:id="@+id/TexteSAV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_sav"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerSAV"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            
+
+            
+               <TextView
+                android:id="@+id/TextePeriodicite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_periodicite"
+                android:textColor="#ff0000"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerPeriodicite"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            
+               <TextView
+                android:id="@+id/TexteTournee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_tournee"
+                android:textColor="#ff0000"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerTournee"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            
+            
+             <TextView
+                android:id="@+id/TexteAnnuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_annuel"
+                android:textColor="#ff0000"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerAnnuel"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            
+            <TextView
+                android:id="@+id/TexteSaisonEte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_saisonete"
+                android:textColor="#ff0000"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerSaisonEte"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+            
+               <TextView
+                android:id="@+id/TexteSaisonHiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_saisonhiver"
+                android:textColor="#ff0000"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerSaisonHiver"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="false"
+                android:textSize="20dp" >
+            </Spinner>
+
+
+            <TextView
+                android:id="@+id/TexteChiffreAffaires"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Chiffre d\'affaires ( euro ) "
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditChiffreAffaires"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextePlaceAssInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Nb de places assises Intérieures"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditPlaceAssInt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextePlaceAssExt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Nb de places assises Extérieures"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditPlaceAssExt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+
+            <TextView
+                android:id="@+id/TexteCapacite_sdr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Capacité salle de réunion"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditCapacite_sdr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteNb_Chambres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Nb de chambres"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditNb_Chambres"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteNb_Lits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Nb de lits"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditNb_Lits"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteQualif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Qualification"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerQualif"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="true"
+                android:textSize="20dp" >
+            </Spinner>
+
+            <EditText
+                android:id="@+id/EditQualif"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="phone"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="false"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteSituation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Situation"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerSituation"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="true"
+                android:textSize="20dp" >
+            </Spinner>
+
+            <EditText
+                android:id="@+id/EditSituation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="phone"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="false"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Option"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerOption"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="true"
+                android:textSize="20dp" >
+            </Spinner>
+
+            <EditText
+                android:id="@+id/EditOption"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="phone"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="false"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteTypeCuisine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Type de cuisine"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerTypeCuisine"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:editable="true"
+                android:textSize="20dp" >
+            </Spinner>
+
+            <EditText
+                android:id="@+id/EditTypeCuisine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="phone"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="false"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextePV_CAFE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Café"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditPV_CAFE"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextePV_THE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Thé"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditPV_THE"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextePV_CHOCOLAT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Chocolat"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditPV_CHOCOLAT"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextePV_PETIT_DEJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Petit déjeuner"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditPV_PETIT_DEJ"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextePV_CHAMBRE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Chambre"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditPV_CHAMBRE"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="true"
+                android:text="" >
+            </EditText>
+
+
+            <TextView
+                android:id="@+id/TexteCommentaire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_comment"
+                android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+              <EditText
+                android:id="@+id/EditCommentaire"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textNoSuggestions"
+                android:textStyle="bold"
+                android:imeOptions="actionDone"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:editable="false"
+                 android:visibility="gone"
+                android:text="" >
+            </EditText>
+            
+            
+             <TextView
+                android:id="@+id/TexteEncours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_encours"
+                 android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditEncours"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:editable="false"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+               android:visibility="gone"
+                android:text="" >
+            </EditText>
+            
+            
+            <TextView
+                android:id="@+id/TexteFacturesdues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_facturesdues"
+                 android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditFacturesdues"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:editable="false"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                 android:visibility="gone"
+                android:text="" >
+            </EditText>
+            
+              <TextView
+                android:id="@+id/TexteAvoirdispo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_avoirdispo"
+                 android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditAvoirdispo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:editable="false"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                 android:visibility="gone"
+                android:text="" >
+            </EditText>
+            
+             <TextView
+                android:id="@+id/TexteAvancepaie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_avancepaie"
+                 android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditAvancepaie"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:editable="false"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                 android:visibility="gone"
+                android:text="" >
+            </EditText>
+            
+          
+
+            <TextView
+                android:id="@+id/TexteLat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_lat"
+                android:textSize="22dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditLat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:editable="false"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text="" >
+            </EditText>
+            
+            <TextView
+            android:id="@+id/TexteLon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/prospect_lon"
+            android:textSize="22dp" >
+        </TextView>
+
+            <EditText
+                android:id="@+id/EditLon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:editable="false"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_booking"
+                android:textSize="22dp"
+                android:visibility="gone">
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditBooking"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:editable="false"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text=""
+                android:visibility="gone">
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteTripAdvisor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_tripadvisor"
+                android:textSize="22dp"
+                android:visibility="gone">
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditTripAdvisor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:editable="false"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text=""
+                android:visibility="gone">
+            </EditText>
+
+            <TextView
+                android:id="@+id/TexteZone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_zone"
+                android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerZone"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="20dp" >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/TexteJourPassage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_jourpassage"
+                android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerJourPassage"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="20dp" >
+            </Spinner>
+            
+            <TextView
+                android:id="@+id/TexteCatCompta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_catcompta"
+                android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerCatCompta"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:padding="10dp" >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/TexteTypePDV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/prospect_typepdv"
+                android:visibility="gone"
+                android:textSize="22dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerTypePDV"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:padding="10dp" >
+            </Spinner>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

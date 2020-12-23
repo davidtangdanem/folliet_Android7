@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/rapport_titre"
+            android:textSize="22dp"></TextView>
+
+        <RadioGroup
+            android:id="@+id/radioRapport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="horizontal"
+            android:textSize="22dp"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/radioBtnDemande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rapport_choix_demande"
+                android:textSize="22dp" />
+
+            <RadioButton
+                android:id="@+id/radioBtnRapport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:text="@string/rapport_choix_rapport" />
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:id="@+id/TexteDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/rapport_date"
+            android:textSize="22dp"></TextView>
+
+        <EditText
+            android:id="@+id/EditDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:editable="false"
+            android:inputType="textNoSuggestions"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:text=""
+            android:textStyle="bold"></EditText>
+
+        <Button
+            android:id="@+id/bDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/TexteHeure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/rapport_heure"
+            android:textSize="22dp"
+            android:visibility="gone"></TextView>
+
+        <EditText
+            android:id="@+id/EditHeure"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:editable="false"
+            android:inputType="textNoSuggestions"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:text=""
+            android:textStyle="bold"
+            android:visibility="gone"></EditText>
+
+        <TextView
+            android:id="@+id/TextefamActivite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Famille d\'évènement"
+            android:textSize="22dp"></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerFamActivite"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"></Spinner>
+
+        <TextView
+            android:id="@+id/TexteTypeActivite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/rapport_typeactivite"
+            android:textSize="22dp"></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerTypeActivite"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"></Spinner>
+
+        <TextView
+            android:id="@+id/texte_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textSize="18dp"></TextView>
+
+
+        <TextView
+            android:id="@+id/TexteQuestionnaire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/rapport_questionnaire"
+            android:textSize="22dp"
+            android:visibility="gone"></TextView>
+
+        <LinearLayout
+            android:id="@+id/lineQuestionnaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/bQuestionnaire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:text="Questionnaire" />
+
+            <Button
+            android:id="@+id/bContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:text="Contact" />
+
+            <TextView
+            android:id="@+id/TexteContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bMachineclient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:text="Sélectionner une machine dans le parc" />
+
+        <Spinner
+            android:id="@+id/spinnerQuestionnaire"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone"></Spinner>
+
+        <TextView
+            android:id="@+id/TexteCommentaire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/rapport_commentaire"
+            android:textSize="22dp"></TextView>
+
+        <EditText
+            android:id="@+id/EditCommentaire"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:editable="true"
+            android:gravity="top"
+            android:inputType="textNoSuggestions"
+            android:lines="4"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:text=""
+            android:textStyle="bold"></EditText>
+
+        <TextView
+            android:id="@+id/TexteIncommerciale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/rapport_infocommerciale"
+            android:textSize="22dp"></TextView>
+
+        <EditText
+            android:id="@+id/EditInfocommerciale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:editable="true"
+            android:gravity="top"
+            android:inputType="textNoSuggestions"
+            android:lines="4"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:text=""
+            android:textStyle="bold"></EditText>
+
+        <TextView
+            android:id="@+id/TexteNumeroserie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/rapport_noserie"
+            android:textSize="22dp"></TextView>
+
+        <EditText
+            android:id="@+id/EditNumeroserie"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:editable="true"
+            android:gravity="top"
+            android:inputType="textNoSuggestions"
+            android:lines="1"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:text=""
+            android:textStyle="bold"></EditText>
+
+
+        <TextView
+            android:id="@+id/TexteNextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:text="@string/rapport_nextdate"
+            android:textSize="22dp"></TextView>
+
+        <Button
+            android:id="@+id/bNextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:text="@string/rapport_agenda" />
+
+        <LinearLayout
+            android:id="@+id/linearHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/linearHeurearrive"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="#80ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TexteLblHeurarrive"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/rapport_heuredebut"
+                    android:textSize="20dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonGo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/refresh" />
+
+                    <TimePicker
+                        android:id="@+id/timePickerHourDebut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginRight="20px"
+                        android:textSize="10sp"></TimePicker>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearHeuredepart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#80ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TexteLblHeuredepart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/rapport_heurefin"
+                    android:textSize="20dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TimePicker
+                        android:id="@+id/timePickerHourFin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginRight="10px"
+                        android:textSize="10sp"></TimePicker>
+
+                    <ImageButton
+                        android:id="@+id/imageButtonStop"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/refresh" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/champ_choix_agent"
+            android:visibility="gone">
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/title_agent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Accompagné par "
+                android:textSize="22dp">
+            </TextView>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_agent">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <CheckBox
+                android:id="@+id/checkCloture"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="Clôturée" />
+
+            <CheckBox
+                android:id="@+id/checkNoncloture"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:text="Non clôturée" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TexteResteafaire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Reste à faire"
+            android:textSize="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/EditResteafaire"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:editable="true"
+            android:gravity="top"
+            android:inputType="textNoSuggestions"
+            android:lines="4"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:text=""
+            android:textStyle="bold"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <CheckBox
+                android:id="@+id/checkFacturable"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="Facturable" />
+
+            <CheckBox
+                android:id="@+id/checkNonfacturable"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:text="Non facturable" />
+
+            <CheckBox
+                android:id="@+id/checkVisitepreventive"
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:text="Compte pour une visite préventive" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lineZoneDurete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+            android:id="@+id/TexteDuretee"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Dureté de l\'eau :"
+            android:textSize="20dp"></TextView>
+
+            <TextView
+            android:id="@+id/TexteTH"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="°TH"
+            android:textSize="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/EditTH"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:editable="true"
+            android:gravity="top"
+            android:inputType="number"
+            android:lines="1"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:text=""
+            android:maxLength="2"
+            android:textStyle="bold"></EditText>
+
+            <TextView
+            android:id="@+id/TexteKH"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="°KH"
+            android:textSize="22dp"></TextView>
+
+        <EditText
+            android:id="@+id/EditKH"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:editable="true"
+            android:gravity="top"
+            android:inputType="number"
+            android:lines="1"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:maxLength="2"
+            android:text=""
+            android:textStyle="bold"></EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSignature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvSignatureTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Signature du client"
+                android:textColor="#0000ff"
+                android:textSize="20sp"
+                android:textStyle="italic"></TextView>
+
+            <RelativeLayout
+                android:id="@+id/rlSignature"
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/area_background"
+                android:focusable="true"
+                android:padding="20dip">
+
+                <ImageView
+                    android:id="@+id/ivSignatureClient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dip"
+                    android:gravity="top"
+                    android:textColor="#000000"></ImageView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <Button
+                android:id="@+id/bStatistique"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:text="Statistiques" />
+            
+             <TextView
+                android:id="@+id/textTitreCA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Chiffre d\'affaires EUR"
+                android:textStyle="bold"
+                android:layout_marginLeft="70dp"
+                 android:layout_marginTop="10dp"
+                android:textSize="18dp" >
+            </TextView>
+
+        <LinearLayout
+            android:id="@+id/linearCA"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteCA_MOIS"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Mois"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TexteCA_MOIS_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="60dp"
+                android:text="Mois"
+                android:textSize="18dp" >
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearCA_3MOIS"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteCA_3MOIS"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="3 Mois"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TexteCA_3MOIS_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:text="3Mois"
+                android:textSize="18dp" >
+            </TextView>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCA_ANNEE_N"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteCA_ANNEE_N"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Année N"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TexteCA_ANNEE_N_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:text="aaaaaa"
+                android:textSize="18dp" >
+            </TextView>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearCA_ANNEE_N_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteCA_ANNEE_N_1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Année N-1"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TexteCA_ANNEE_N_1_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:text="aaaaaaz"
+                android:textSize="18dp" >
+            </TextView>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/linear_renta"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textTitretrait1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="--------------------------------------------------------------"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18dp" >
+            </TextView>
+
+        <TextView
+            android:id="@+id/textTitreRentabilite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Rentabilité EUR"
+            android:textStyle="bold"
+            android:layout_marginLeft="70dp"
+            android:textSize="18dp" >
+        </TextView>
+
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearMarge"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteMarge_MOIS"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Mois"
+                android:textSize="18dp" >
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/TexteMarge_MOIS_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="Mois"
+                android:textSize="18dp" >
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearCA_3MOIS"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteMarge_3MOIS"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="3 Mois"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TexteMarge_3MOIS_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="Mois"
+                android:textSize="18dp" >
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCA_ANNEE_N"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteMarge_ANNEE_N"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Année N"
+                android:textSize="18dp" >
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/TexteMarge_ANNEE_N_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="Mois"
+                android:textSize="18dp" >
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearCA_ANNEE_N_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteMarge_ANNEE_N_1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Année N-1"
+                android:textSize="18dp" >
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/TexteMarge_ANNEE_N_1_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="Mois"
+                android:textSize="18dp" >
+            </TextView>
+
+
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textTitretrait2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="--------------------------------------------------------------"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18dp" >
+            </TextView>
+
+
+            <TextView
+            android:id="@+id/textTitreClassification"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Classification"
+            android:textStyle="bold"
+            android:layout_marginLeft="70dp"
+            android:textSize="18dp" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linearCLASSIFICATION_PARTCA"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:visibility="gone"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteClassification_PartCA"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Part du C.A."
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TexteClassification_PartCA_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                android:gravity="right"
+                android:text="aaaaaaz"
+                android:textSize="18dp" >
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCLASSIFICATION_RANG"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteClassification_Rang"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Rang"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TexteClassification_Rang_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                android:gravity="right"
+                android:text="aaaaaaz"
+                android:textSize="18dp" >
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCLASSIFICATION_RANGAGENCE"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteClassification_RangAgence"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Rang Agence"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TexteClassification_RangAgence_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                android:gravity="right"
+                android:text="aaaaaaz"
+                android:textSize="18dp" >
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCLASSIFICATION_RANGVENDEUR"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/TexteClassification_RangVendeur"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Rang Vendeur"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TexteClassification_RangVendeur_Valeur"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                android:gravity="right"
+                android:text="aaaaaaz"
+                android:textSize="18dp" >
+            </TextView>
+
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/textTitretrait3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="--------------------------------------------------------------"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18dp" >
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/textTitreEngagement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Engagement café Demandé (Kg)  Engagement café Réalisé (Kg)"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:textSize="18dp" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/linearENG_MOIS"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+
+                <TextView
+                    android:id="@+id/TexteENG_MOIS"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Mois"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TexteENG_DEMANDE_MOIS_Valeur"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"
+                    android:gravity="right"
+                    android:text="Mois"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TexteENG_REALISE_MOIS_Valeur"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="Mois"
+                    android:textSize="18dp" >
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearENG_3MOIS"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+
+                <TextView
+                    android:id="@+id/TexteENG_3MOIS"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="3 Mois"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TexteENG_DEMANDE_3MOIS_Valeur"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"
+                    android:gravity="right"
+                    android:text="3Mois"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TexteENG_REALISE_3MOIS_Valeur"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="Mois"
+                    android:textSize="18dp" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearENG_ANNEE_N"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+
+                <TextView
+                    android:id="@+id/TexteENG_ANNEE_N"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Année N"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TexteENG_DEMANDE_ANNEE_N_Valeur"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"
+                    android:gravity="right"
+                    android:text="aaaaaa"
+                    android:textSize="18dp" >
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/TexteENG_REALISE_ANNEE_N_Valeur"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="Mois"
+                    android:textSize="18dp" >
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearENG_ANNEE_N_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+
+                <TextView
+                    android:id="@+id/TexteENG_ANNEE_N_1"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Année N-1"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TexteENG_DEMANDE_ANNEE_N_1_Valeur"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"
+                    android:gravity="right"
+                    android:text="aaaaaaz"
+                    android:textSize="18dp" >
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/TexteENG_REALISE_ANNEE_N_1_Valeur"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"
+                    android:gravity="right"
+                    android:text="Mois"
+                    android:textSize="18dp" >
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
